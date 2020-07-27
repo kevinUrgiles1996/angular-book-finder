@@ -1,4 +1,7 @@
-<<<<<<< HEAD
+# angular-book-finder
+
+This is a simple App made with Angular. It uses Angular Material to build the UI and the Google Books API to fetch data.
+
 # BookFinder
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.9.
@@ -26,7 +29,3 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-=======
-# angular-book-finder
-This is a simple App made with Angular. It uses Angular Material to build the UI and the Google Books API to fetch data.
->>>>>>> 8b0ec2c14b03eccd323966cded57f3eb89d87e7b
