@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 import { BookService } from './../../../core/services/book.service';
+import { Book } from './../../../core/models/book.model';
 
 @Component({
   selector: 'app-book-detail',
@@ -8,7 +9,7 @@ import { BookService } from './../../../core/services/book.service';
   styleUrls: ['./book-detail.component.scss'],
 })
 export class BookDetailComponent implements OnInit {
-  book: Object;
+  book: Book;
   previewLink: string;
 
   constructor(

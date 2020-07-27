@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Book } from './../../../core/models/book.model';
 
 import { BookService } from './../../../core/services/book.service';
 
@@ -17,7 +16,6 @@ export class BookContainerComponent implements OnInit {
 
   fetchBooks(text: string) {
     this.bookService.getBooks(text).subscribe((data) => {
-      console.log(data.items);
       this.books = data.items;
     });
   }
