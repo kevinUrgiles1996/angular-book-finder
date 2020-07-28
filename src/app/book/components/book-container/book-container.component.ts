@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { BookService } from './../../../core/services/book.service';
+import { Book } from './../../../core/models/book.model';
 
 @Component({
   selector: 'app-book-container',
@@ -8,7 +9,7 @@ import { BookService } from './../../../core/services/book.service';
   styleUrls: ['./book-container.component.scss'],
 })
 export class BookContainerComponent implements OnInit {
-  books: any[];
+  books: Book[];
 
   constructor(private bookService: BookService) {}
 
@@ -16,7 +17,31 @@ export class BookContainerComponent implements OnInit {
 
   fetchBooks(text: string) {
     this.bookService.getBooks(text).subscribe((data) => {
-      this.books = data.items;
+      const items = data.items;
+      this.books = items.map((item) => {
+        const { id } = item;
+        const {
+          title,
+          subtitle,
+          publisher,
+          publishedDate,
+          description,
+          authors,
+          categories,
+          imageLinks,
+        } = item.volumeInfo;
+        return {
+          id,
+          title,
+          subtitle,
+          publisher,
+          publishedDate,
+          description,
+          authors,
+          categories,
+          imageLinks,
+        };
+      });
     });
   }
 

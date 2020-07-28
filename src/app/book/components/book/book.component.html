@@ -1,11 +1,7 @@
 <mat-card>
-  <img
-    mat-card-image
-    [src]="book.volumeInfo.imageLinks.thumbnail"
-    alt="Book Cover"
-  />
+  <img mat-card-image [src]="book?.imageLinks?.thumbnail" alt="Book Cover" />
   <mat-card-actions>
-    <button mat-raised-button color="primary" [routerLink]="book.id">
+    <button mat-raised-button color="primary" [routerLink]="book?.id">
       See More
     </button>
   </mat-card-actions>

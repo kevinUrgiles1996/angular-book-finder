@@ -1,10 +1,8 @@
 <button mat-raised-button routerLink="/" color="accent">Back to Search</button>
 <mat-card>
   <div class="card-header">
-    <mat-card-title>{{ book.title }}</mat-card-title>
-    <mat-card-subtitle *ngIf="book.subtitle">{{
-      book.subtitle
-    }}</mat-card-subtitle>
+    <mat-card-title>{{ book?.title }}</mat-card-title>
+    <mat-card-subtitle>{{ book?.subtitle }}</mat-card-subtitle>
   </div>
   <mat-card-content>
     <div class="row">
@@ -12,16 +10,16 @@
         <div class="row">
           <div class="col-xs">
             <p><strong>Author(s)</strong></p>
-            <p *ngFor="let author of book.authors">{{ author }}</p>
+            <p *ngFor="let author of book?.authors">{{ author }}</p>
             <p><strong>Publisher</strong></p>
-            <p>{{ book.publisher }}</p>
+            <p>{{ book?.publisher }}</p>
             <p><strong>Published Date</strong></p>
-            <p>{{ book.publishedDate }}</p>
+            <p>{{ book?.publishedDate }}</p>
             <p><strong>Categories</strong></p>
-            <p *ngFor="let category of book.categories">{{ category }}</p>
+            <p *ngFor="let category of book?.categories">{{ category }}</p>
           </div>
           <div class="col-xs book-cover">
-            <img [src]="book.imageLinks.thumbnail" alt="" />
+            <img [src]="book?.imageLinks?.thumbnail" alt="" />
             <a
               mat-raised-button
               color="accent"
@@ -33,11 +31,8 @@
         </div>
       </div>
       <div class="col-md-6 col-xs-12">
-        <div class="book-description" [innerHTML]="book.description"></div>
+        <div class="book-description" [innerHTML]="book?.description"></div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-md-6 col-xs-12"></div>
     </div>
   </mat-card-content>
 </mat-card>

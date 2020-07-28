@@ -25,7 +25,6 @@ export class BookDetailComponent implements OnInit {
         bookId +
         '&printsec=frontcover';
       this.bookService.getBook(bookId).subscribe((result) => {
-        console.log(result.volumeInfo);
         this.book = result.volumeInfo;
       });
     });

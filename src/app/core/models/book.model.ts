@@ -7,6 +7,5 @@ export interface Book {
   description: string;
   authors: string[];
   categories: string[];
-  imageLinks: { thumbnail: string };
-  // volumeInfo: object;
+  imageLinks?: { thumbnail: string };
 }
