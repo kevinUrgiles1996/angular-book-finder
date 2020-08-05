@@ -1,11 +1,11 @@
-# angular-book-finder
+# Angular Book Finder
 
 This is a simple App made with Angular.\
 It uses [Angular Material](https://material.angular.io/) to build the UI and the [Google Books API](https://developers.google.com/books) to fetch data.
 
 # Use this project
 
-1. Install [Angular CLI](https://cli.angular.io/) \
+1. Install [Angular CLI](https://cli.angular.io/). If installed, ignore this step \
    `sudo npm install -g @angular/cli`
 
 1. Dowload or clone this repo \
