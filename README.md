@@ -1,6 +1,6 @@
 # Angular Book Finder
 
-This is a simple App made with Angular.\
+This is a simple App made with Angular. [Live Demo](https://angular-book-finder.netlify.app/)\
 It uses [Angular Material](https://material.angular.io/) to build the UI and the [Google Books API](https://developers.google.com/books) to fetch data.
 
 # Use this project
