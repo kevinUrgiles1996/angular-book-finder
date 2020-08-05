@@ -14,5 +14,5 @@ It uses [Angular Material](https://material.angular.io/) to build the UI and the
    `cd ~/angular-book-finder`
 1. Once there, type npm install to install all dependencies \
    `npm install`
-1. ng serve to create view app in localhost\
+1. ng serve to view app in localhost\
    `ng serve`
