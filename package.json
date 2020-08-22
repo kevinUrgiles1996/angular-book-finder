@@ -1,5 +1,6 @@
 {
   "name": "book-finder",
+  "author": "Kevin Urgilés",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
